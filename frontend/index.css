@@ -11,3 +11,17 @@ h1 {
 #home-intro:hover{
     background-color: lightgray;
 }
+#nav{
+    text-align: center;
+    background-color: brown;
+    text-decoration: none;
+    height: 25px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+
+}
+#nav a{
+    margin: 0px 5px;
+    text-decoration: none;
+    color: white;
+}
