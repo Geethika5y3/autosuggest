@@ -1,2 +1,2 @@
 # autosuggest
-# this is my main repo fot project !
+# this is my main repo for project !
