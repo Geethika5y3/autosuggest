@@ -1,78 +1,73 @@
-/* Heading */
 h1 {
-    color: red;
+  color: red;
 }
 
-/* Home Intro */
-#home-intro {
-    text-align: center;
-    border: 3px solid blue;
-    padding: 10px;
+/* property : value */
+
+
+#home-intro{
+  text-align: center;
+  border: 3px solid blue;
+
 }
 
-#home-intro:hover {
-    background-color: burlywood;
+#home-intro:hover{
+  background-color: burlywood;
 }
 
-/* Navigation */
-#nav {
-    text-align: center;
-    background-color: brown;
-    padding: 5px;
-    margin-bottom: 20px;
+#p2{
+  color: blue;
 }
 
-#nav a {
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
+#nav{
+  text-align: center;
+  background-color: brown;
+  height: 25px;
+  padding-top: 5px;
+  margin-bottom: 5px;
 }
 
-/* User Card */
-#card {
-    width: 300px;
-    margin: 20px auto;
-    border: 1px solid black;
-    text-align: center;
-    background-color: white;
+#nav a{
+  margin: 0px 5px;
+  text-decoration: none;
+  color: white;
 }
 
-/* Image Section */
-#card-img {
-    width: 300px;
+#card{
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 625px;
+  margin-right: 575px;
+  border: 3px solid black;
+  border-radius: 5px;
+  height: 100%;
 }
 
-#card-img img {
-    width: 300px;
-    height: 300px;
-    display: block;
+#card-img{
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  margin: 0px auto;
 }
 
-/* Details Section */
-#action {
-    border-top: 1px solid black;
-    padding: 5px;
+img{
+  width: 300px;
+  height: 300px;
 }
 
-#action h1 {
-    color: red;
-    font-size: 45px;
-    margin: 10px 0;
+#action{
+  text-align: center;
+  width: 100%;
+  height:100%;
+  margin:0;
 }
-
-#action p {
-    font-size: 22px;
-    margin: 10px 0 20px;
-}
-
-/* Buttons */
-#action button {
-    padding: 8px 15px;
-    margin: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#action button:hover {
-    background-color: lightgray;
+#action button{
+  margin: 5px 0;
+  height: 30px;
+  width:100%;
+  overflow: hidden;
+  border: none;
+  /* border-radius: 5px; */
+  background-color: rgb(128, 133, 139);
+  color: rgb(21, 20, 20);
 }
