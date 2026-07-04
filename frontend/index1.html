@@ -1,24 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>BeingInfinity</title>
-</head>
-<body>
-    <span>&#9881;</span>
-    <span>&#x2022; online | &#x1F552; - ms</span>
+<html lang ="en">
+    <head>
+       
+        <title>BeingInfinity</title>
+        <style>
+            .l{
+                position:fixed;
+                top:20px;
+                left:20px;
+            }
+            .r{
+                position:fixed;
+                top:20px;
+                right:20px;
+            }
+            .search{
+                text-align:center;
+                margin-top:100px;
+            }
+            .logo{
+                color: blue;
+            }
+            .ge{
+                color:gray;
+            }
+            .lens{
+                position:relative;
+                left:40px;
+            }
+            .box{
+                padding:15px 15px 15px 45px;
+                border-radius:30px;
+                width:30%;
+            }
+            #sug{
+                border:1px solid black;
+                width:30%;
+                margin-left:  36%;
 
-    <h1>BeingInfinity</h1>
+            }
+        </style>
+    </head>
+     <body>
+          <div>
+            <span class="l">&#9881;</span>
+            <span class="r">&#8226; online | &#9201; -ms</span>
+           </div>
+           <div class="search">
+        <h1  style="font-size:60px;"><span class="logo">Being</span>Infinity</h1>
+       <span class="ge">
+        <p>One million phrases. Four Algorithms. Prefix based Auto Suggest.</p>
+     
+     <span class="lens">&#128269;</span>
+     <label>
+        <input class="box" type="text" placeholder="Start typing to search">
+     </label>
+     </span>
+     <div id="sug">
+        Suggestion box
 
-    <p>
-        One million patrons. Four algorithms. Prefix Based Auto Suggest.
-    </p>
-
-    <label>
-        🔍
-        <input type="text" placeholder="Start typing to search...">
-    </label>
-
-    
-
-</body>
+     </div>
+     </div>
+     </body>
 </html>
