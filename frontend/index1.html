@@ -34,11 +34,24 @@
                 width:30%;
             }
             #sug{
-                border:1px solid black;
-                width:30%;
-                margin-left:  36%;
+    width:30%;
+    margin-left:36%;
+    margin-top:5px;
+    text-align:left;
+}
 
-            }
+#sug div{
+    border:1px solid #d3d3d3;
+    padding:10px 15px;
+    background-color:white;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+#sug div:hover{
+    background-color:#f2f2f2;
+
+}
         </style>
     </head>
      <body>
@@ -57,9 +70,45 @@
      </label>
      </span>
      <div id="sug">
-        Suggestion box
+        <!-- Suggestion box -->
 
      </div>
      </div>
+     <script>
+    var searchBox = document.querySelector(".box");
+    var suggestionBox = document.querySelector("#sug");
+
+    searchBox.addEventListener("input", function () {
+
+        var userInput = searchBox.value;
+
+    
+        if (userInput.trim() === "") {
+            suggestionBox.innerHTML = "";
+            return;
+        }
+
+        var url1 = "https://autosuggest-backend.onrender.com/api/autosuggest?q=";
+        var url2 = "&algorithm=brute&limit=10&weighted=false";
+        var url = url1 + userInput + url2;
+
+        fetch(url)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                console.log(data);
+                var resultArray = data.results;
+
+                var res = "";
+
+                for (var i = 0; i < resultArray.length; i++) {
+                    res += "<div>" + resultArray[i].text + "</div>";
+                }
+
+                suggestionBox.innerHTML = res;
+            });
+    });
+</script>
      </body>
 </html>
