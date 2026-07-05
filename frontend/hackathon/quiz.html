@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillQuest AI - Quiz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+<header>
+<h1>🌍 SkillQuest AI</h1>
+
+<div class="stats">
+<div class="stat-card">⭐ XP <h2 id="xp">0</h2></div>
+<div class="stat-card">🪙 Coins <h2 id="coins">0</h2></div>
+<div class="stat-card">🏆 Level <h2 id="level">1</h2></div>
+</div>
+
+<h2 id="missionTitle"></h2>
+</header>
+
+<section class="planet-section">
+<h2>Your Planet</h2>
+<div id="planet">🌑</div>
+</section>
+
+<section class="quiz-card">
+<h2 id="question">Loading...</h2>
+
+<div id="options"></div>
+
+<button onclick="nextQuestion()" id="nextBtn">Next →</button>
+<button onclick="explainAnswer()" id="aiBtn">🤖 Explain</button>
+
+<div id="aiResponse"></div>
+</section>
+
+<section class="progress-section">
+<progress id="progressBar" value="0" max="100"></progress>
+</section>
+
+<section id="achievement"></section>
+
+<div id="toast"></div>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>

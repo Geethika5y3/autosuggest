@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SkillQuest AI Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+    <div class="top">
+
+        <h1 id="welcome">
+            👨‍🚀 Welcome Back
+        </h1>
+
+        <p>
+            Continue building your learning planet!
+        </p>
+
+    </div>
+
+
+    <div class="planetCard">
+
+        <h2>🌍 YOUR PLANET</h2>
+
+        <div class="planetArea">
+
+            <div class="star s1">⭐</div>
+            <div class="star s2">✨</div>
+            <div class="star s3">⭐</div>
+
+            <div class="tree left">
+                🌳
+            </div>
+
+            <div id="planet">
+                🌑
+            </div>
+
+            <div class="house">
+                🏠
+            </div>
+
+            <div class="rocket">
+                🚀
+            </div>
+
+            <div class="satellite">
+                🛰️
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="stats">
+
+        <div class="card">
+
+            <div class="icon">
+                ⭐
+            </div>
+
+            <h3 id="xp">0</h3>
+
+            <p>Experience</p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">
+                🪙
+            </div>
+
+            <h3 id="coins">0</h3>
+
+            <p>Coins</p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">
+                🏆
+            </div>
+
+            <h3 id="level">1</h3>
+
+            <p>Level</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="progressCard">
+
+        <h2>Planet Progress</h2>
+
+        <progress id="progress" max="300" value="0"></progress>
+
+        <p id="progressText">
+            0 / 300 XP
+        </p>
+
+    </div>
+
+
+    <div class="badgeCard">
+
+        <h2>🏅 Current Badge</h2>
+
+        <h3 id="badgeName">
+            Beginner Explorer
+        </h3>
+
+    </div>
+
+
+    <div class="buttons">
+
+        <button onclick="continueGame()">
+            📚 Continue Learning
+        </button>
+
+        <button onclick="shop()">
+            🛒 Planet Shop
+        </button>
+
+        <button onclick="logout()">
+            🚪 Logout
+        </button>
+
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>

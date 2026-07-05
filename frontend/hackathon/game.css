@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#08182f,#102d57,#1b3b6f);
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* Animated Stars */
+
+.stars{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-image:
+    radial-gradient(white 1px,transparent 1px),
+    radial-gradient(#38bdf8 1px,transparent 1px),
+    radial-gradient(#ffffff 2px,transparent 2px);
+    background-size:120px 120px,180px 180px,250px 250px;
+    opacity:.30;
+    animation:starsMove 40s linear infinite;
+    z-index:-1;
+}
+
+@keyframes starsMove{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-200px);
+
+}
+
+}
+
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+padding:50px 20px;
+
+text-align:center;
+
+}
+
+h1{
+
+font-size:48px;
+
+margin-bottom:15px;
+
+}
+
+.container p{
+
+font-size:20px;
+
+color:#cbd5e1;
+
+margin-bottom:40px;
+
+}
+
+.missions{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.mission{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(12px);
+
+border-radius:20px;
+
+padding:30px;
+
+transition:.3s;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+.mission:hover{
+
+transform:translateY(-12px) scale(1.04);
+
+box-shadow:0 0 30px #38bdf8;
+
+}
+
+.emoji{
+
+font-size:60px;
+
+margin-bottom:15px;
+
+}
+
+.mission h2{
+
+margin-bottom:15px;
+
+font-size:28px;
+
+}
+
+.mission p{
+
+font-size:16px;
+
+line-height:1.6;
+
+margin-bottom:20px;
+
+color:#dbeafe;
+
+}
+
+span{
+
+display:inline-block;
+
+margin-bottom:25px;
+
+font-weight:bold;
+
+color:#38bdf8;
+
+}
+
+button{
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:40px;
+
+font-size:17px;
+
+font-weight:600;
+
+cursor:pointer;
+
+background:linear-gradient(to right,#38bdf8,#0ea5e9);
+
+color:white;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 25px #38bdf8;
+
+}
+
+@media(max-width:768px){
+
+h1{
+
+font-size:34px;
+
+}
+
+.container p{
+
+font-size:17px;
+
+}
+
+}

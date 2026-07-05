@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillQuest AI - Planet Shop</title>
+
+    <link rel="stylesheet" href="shop.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🛒 Planet Builder Shop</h1>
+
+        <div class="stats">
+
+            <div class="card">
+
+                🪙 Coins
+
+                <h2 id="coins">0</h2>
+
+            </div>
+
+            <div class="card">
+
+                ⭐ XP
+
+                <h2 id="xp">0</h2>
+
+            </div>
+
+            <div class="card">
+
+                🏆 Level
+
+                <h2 id="level">1</h2>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <div class="planet-section">
+
+            <h2>Your Planet</h2>
+
+            <div id="planet">
+
+                🌍
+
+            </div>
+
+            <div id="planetItems">
+
+            </div>
+
+        </div>
+
+        <div class="shop-section">
+
+            <h2>Planet Shop</h2>
+
+            <div class="shop-grid">
+
+                <div class="item">
+
+                    <div class="emoji">🌳</div>
+
+                    <h3>Tree</h3>
+
+                    <p>20 Coins</p>
+
+                    <button onclick="buyItem('🌳',20)">Buy</button>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="emoji">🏠</div>
+
+                    <h3>House</h3>
+
+                    <p>40 Coins</p>
+
+                    <button onclick="buyItem('🏠',40)">Buy</button>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="emoji">🌊</div>
+
+                    <h3>River</h3>
+
+                    <p>50 Coins</p>
+
+                    <button onclick="buyItem('🌊',50)">Buy</button>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="emoji">🚀</div>
+
+                    <h3>Rocket</h3>
+
+                    <p>100 Coins</p>
+
+                    <button onclick="buyItem('🚀',100)">Buy</button>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="emoji">🛰</div>
+
+                    <h3>Satellite</h3>
+
+                    <p>150 Coins</p>
+
+                    <button onclick="buyItem('🛰',150)">Buy</button>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="emoji">☁️</div>
+
+                    <h3>Cloud</h3>
+
+                    <p>30 Coins</p>
+
+                    <button onclick="buyItem('☁️',30)">Buy</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button onclick="clearPlanet()">
+
+            🔄 Reset Planet
+
+        </button>
+
+        <button onclick="goDashboard()">
+
+            📊 Dashboard
+
+        </button>
+
+    </div>
+
+    <script src="shop.js"></script>
+
+</body>
+
+</html>

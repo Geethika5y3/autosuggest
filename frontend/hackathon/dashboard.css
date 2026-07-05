@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#08182f,#0f3460,#16213e);
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* Animated Stars */
+
+.stars{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-image:
+    radial-gradient(white 1px,transparent 1px),
+    radial-gradient(#38bdf8 1px,transparent 1px),
+    radial-gradient(#ffffff 2px,transparent 2px);
+    background-size:120px 120px,180px 180px,250px 250px;
+    opacity:.35;
+    animation:moveStars 40s linear infinite;
+    z-index:-1;
+}
+
+@keyframes moveStars{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-200px);
+    }
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.top{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.top h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.top p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+.planetCard{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.planetArea{
+
+    position:relative;
+
+    height:300px;
+
+}
+
+#planet{
+
+    font-size:130px;
+
+    margin-top:20px;
+
+    animation:floatPlanet 3s ease-in-out infinite;
+
+}
+
+@keyframes floatPlanet{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0);}
+
+}
+
+.star{
+
+    position:absolute;
+
+    font-size:28px;
+
+}
+
+.s1{top:30px;left:20%;}
+
+.s2{top:70px;right:18%;}
+
+.s3{bottom:40px;left:15%;}
+
+.tree{
+
+position:absolute;
+
+bottom:20px;
+
+left:28%;
+
+font-size:42px;
+
+}
+
+.house{
+
+position:absolute;
+
+bottom:35px;
+
+left:52%;
+
+font-size:42px;
+
+}
+
+.rocket{
+
+position:absolute;
+
+bottom:20px;
+
+right:22%;
+
+font-size:42px;
+
+}
+
+.satellite{
+
+position:absolute;
+
+top:20px;
+
+right:28%;
+
+font-size:38px;
+
+animation:rotateSat 8s linear infinite;
+
+}
+
+@keyframes rotateSat{
+
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+
+}
+
+.stats{
+
+display:flex;
+
+gap:25px;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+margin-bottom:30px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(12px);
+
+padding:25px;
+
+width:220px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.3s;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px) scale(1.03);
+
+box-shadow:0 0 30px #38bdf8;
+
+}
+
+.icon{
+
+font-size:40px;
+
+margin-bottom:10px;
+
+}
+
+.card h3{
+
+font-size:36px;
+
+margin-bottom:8px;
+
+}
+
+.progressCard,.badgeCard{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(12px);
+
+border-radius:20px;
+
+padding:25px;
+
+margin-bottom:30px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+progress{
+
+width:85%;
+
+height:22px;
+
+margin:20px 0;
+
+}
+
+#progressText{
+
+font-size:18px;
+
+}
+
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+button{
+
+padding:15px 30px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:40px;
+
+cursor:pointer;
+
+background:linear-gradient(90deg,#38bdf8,#0ea5e9);
+
+color:white;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 25px #38bdf8;
+
+}
+
+@media(max-width:768px){
+
+.stats{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.card{
+
+width:90%;
+
+}
+
+.top h1{
+
+font-size:32px;
+
+}
+
+#planet{
+
+font-size:90px;
+
+}
+
+}
